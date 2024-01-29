@@ -1,0 +1,42 @@
+<!-- templates/dashboard_creation.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Dashboard</title>
+</head>
+<body>
+    <h1>Create Dashboard</h1>
+
+    <label for="dashboardName">Dashboard Name:</label>
+    <input type="text" id="dashboardName" name="dashboardName" required>
+
+    <label for="selectedDevices">Select Devices:</label>
+    <select id="selectedDevices" name="selectedDevices" multiple>
+        <!-- Populate with devices from the server or database -->
+        <option value="device1">Device 1</option>
+        <option value="device2">Device 2</option>
+        <!-- Add more devices as needed -->
+    </select>
+
+    <label for="selectedData">Select Data:</label>
+    <select id="selectedData" name="selectedData" multiple>
+        <option value="data1">Data 1</option>
+        <option value="data2">Data 2</option>
+        <!-- Add more data options as needed -->
+    </select>
+
+    <button onclick="createDashboard()">Create Dashboard</button>
+
+    <a href="/">Back to Dashboard</a>
+
+    <script>
+        function createDashboard() {
+            // Implement logic to send selected devices and data to the server
+            console.log('Dashboard created!');
+        }
+    </script>
+</body>
+</html>

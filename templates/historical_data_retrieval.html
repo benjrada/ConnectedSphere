@@ -1,0 +1,41 @@
+<!-- templates/historical_data_retrieval.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Data Retrieval</title>
+</head>
+<body>
+    <h1>Retrieve Historical Data</h1>
+
+    <label for="selectedDevice">Select Device:</label>
+    <select id="selectedDevice" name="selectedDevice">
+        <!-- Populate with devices from the server or database -->
+        <option value="device1">Device 1</option>
+        <option value="device2">Device 2</option>
+        <!-- Add more devices as needed -->
+    </select>
+
+    <label for="timeRange">Select Time Range:</label>
+    <select id="timeRange" name="timeRange">
+        <option value="lastHour">Last Hour</option>
+        <option value="last24Hours">Last 24 Hours</option>
+        <option value="custom">Custom</option>
+    </select>
+
+    <!-- Additional controls for custom time range if needed -->
+
+    <button onclick="retrieveHistoricalData()">Retrieve Data</button>
+
+    <a href="/">Back to Dashboard</a>
+
+    <script>
+        function retrieveHistoricalData() {
+            // Implement logic to send selected device and time range to the server
+            console.log('Historical data retrieved!');
+        }
+    </script>
+</body>
+</html>

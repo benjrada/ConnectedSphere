@@ -1,0 +1,32 @@
+<!-- templates/notification_panel.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-time Notifications</title>
+</head>
+<body>
+    <h1>Real-time Notifications</h1>
+
+    <!-- Notification panel to dynamically display real-time notifications -->
+    <div id="notificationPanel"></div>
+
+    <a href="/">Back to Dashboard</a>
+
+    <script>
+        // Simulate real-time notifications (replace with actual implementation)
+        setTimeout(function() {
+            displayNotification('New critical event: Device offline');
+        }, 3000);
+
+        function displayNotification(message) {
+            var notificationPanel = document.getElementById('notificationPanel');
+            var notificationElement = document.createElement('div');
+            notificationElement.textContent = message;
+            notificationPanel.appendChild(notificationElement);
+        }
+    </script>
+</body>
+</html>
